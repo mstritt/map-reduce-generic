@@ -34,4 +34,5 @@ public interface IRemoteContextStore {
     byte[] readFromRemote(String remoteFile) throws IOException;
 
     List<String> listFilenames(String remoteFolder) throws IOException;
+    List<RemoteFile> listFilenames(String remoteFolder, boolean sortByDate) throws IOException; // sort list by date (true) or name (false)
 }
